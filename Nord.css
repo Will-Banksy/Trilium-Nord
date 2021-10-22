@@ -1,0 +1,179 @@
+/*
+ * To use, you need to put this inside a code node in trilium. Then give it the attribute "#appTheme=nord"
+ * You can activate this theme by going into options (top-right corner) in first tab "Appearance".
+ * 
+ * You can read some details on theming here: http://github.com/zadam/trilium/wiki/Themes
+ */
+
+ :root {
+    /* Nord Colour Palette */
+    /* Polar Night */
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    /* Snow Storm */
+    --nord4: #d8dee9;
+    --nord5: var(--nord5);
+    --nord6: #eceff4;
+    /* Frost */
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    /* Aurora */
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+    
+    --element-radius: 4px;
+    
+    /* Onto the actual styling of Trilium */
+    
+    --theme-style: dark;
+    
+    --main-font-family: 'Lato';
+    --main-font-size: normal;
+    
+    --tree-font-family: 'Lato';
+    --tree-font-size: normal;
+    
+    --detail-font-family: 'Lato';
+    --detail-font-size: normal;
+    
+    --monospace-font-family: 'Inconsolata';
+    --monospace-font-size: normal;
+
+    --main-background-color: var(--nord0);
+    --main-text-color: var(--nord4);
+    --main-border-color: var(--nord1);
+    
+    --accented-background-color: var(--nord1);
+    --more-accented-background-color: var(--nord2);
+    
+    --button-background-color: var(--nord1);
+    --button-disabled-background-color: var(--nord1);
+    --button-border-color: var(--nord1);
+    --button-text-color: var(--nord4);
+    --button-border-radius: var(--element-radius);
+    
+    --primary-button-background-color: var(--nord2);
+    --primary-button-text-color: var(--nord5);
+    --primary-button-border-color: var(--nord2);
+    
+    --muted-text-color: var(--nord3);
+    
+    --input-text-color: var(--nord4);
+    --input-background-color: var(--nord1);
+    
+    --hover-item-text-color: var(--nord5);
+    --hover-item-background-color: var(--nord2);
+        
+    --active-item-text-color: var(--nord5);
+    --active-item-background-color: var(--nord2);
+    
+    --menu-text-color: var(--nord4);
+    --menu-background-color: var(--nord1);
+    
+    --modal-background-color: var(--nord0);
+    --modal-backdrop-color: var(--nord0);
+    
+    --left-pane-background-color: var(--nord0);
+    --left-pane-text-color: var(--nord4);
+
+    --launcher-pane-background-color: var(--nord0);
+    --launcher-pane-text-color: var(--nord4);
+
+    --active-tab-background-color: var(--nord1);
+    --active-tab-text-color: var(--nord4);
+
+    --inactive-tab-background-color: var(--nord0);
+    --inactive-tab-text-color: var(--nord4);
+    
+    --scrollbar-border-color: var(--nord1);
+    --tooltip-background-color: var(--nord1);
+    --link-color: var(--nord8);
+    
+    --mermaid-theme: forest;
+}
+
+/* Tweaks - These are all very fragile and will break if trilium updates it's UI too much */
+
+body .global-menu-button {
+    background-image: url("../../../images/icon-grey.png");
+}
+
+#launcher-pane > * {
+    left: 0px;
+    position: relative;
+}
+
+#launcher-pane .icon-action {
+    border-radius: 0px;
+}
+
+body .search-button {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+body .search-string {
+    background: rgba(0, 0, 0, 0) !important;
+    border-radius: 0px !important;
+}
+
+body .fancytree-node * {
+    border-radius: var(--element-radius) !important;
+}
+
+body .fancytree-node:hover {
+    background: var(--button-background-color);
+    border-color: var(--main-background-color) !important;
+}
+
+body .tree-item-button:hover {
+    background: var(--muted-text-color) !important;
+    border: none;
+}
+
+body .note-title:focus-visible {
+    outline: none;
+    background: var(--button-background-color) !important;
+    border-radius: var(--element-radius);
+}
+
+body .tab-row-widget-container {
+    border-radius: var(--element-radius) !important;
+}
+
+body .tab-row-widget-container * {
+    border-radius: inherit !important;
+}
+
+body .note-tab-wrapper {
+    margin-right: 6px;
+}
+
+body .note-tab-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .note-tab-close span {
+    height: 100%;
+    transform: translateY(-2px);
+}
+
+body .note-new-tab {
+    line-height: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-border-color) !important;
+}
+
+body .CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
+}
