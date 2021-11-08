@@ -6,97 +6,99 @@
  */
 
  :root {
-    /* Nord Colour Palette */
-    /* Polar Night */
-    --nord0: #2e3440;
-    --nord1: #3b4252;
-    --nord2: #434c5e;
-    --nord3: #4c566a;
-    /* Snow Storm */
-    --nord4: #d8dee9;
-    --nord5: #e5e9f0;
-    --nord6: #eceff4;
-    /* Frost */
-    --nord7: #8fbcbb;
-    --nord8: #88c0d0;
-    --nord9: #81a1c1;
-    --nord10: #5e81ac;
-    /* Aurora */
-    --nord11: #bf616a;
-    --nord12: #d08770;
-    --nord13: #ebcb8b;
-    --nord14: #a3be8c;
-    --nord15: #b48ead;
-    
-    --element-radius: 4px;
-    
-    /* Onto the actual styling of Trilium */
-    
-    --theme-style: dark;
-    
-    --main-font-family: 'Lato';
-    --main-font-size: normal;
-    
-    --tree-font-family: 'Lato';
-    --tree-font-size: normal;
-    
-    --detail-font-family: 'Lato';
-    --detail-font-size: normal;
-    
-    --monospace-font-family: 'Inconsolata';
-    --monospace-font-size: normal;
+	/* Nord Colour Palette */
+	/* Polar Night */
+	--nord0: #2e3440;
+	--nord1: #3b4252;
+	--nord2: #434c5e;
+	--nord3: #4c566a;
+	/* Snow Storm */
+	--nord4: #d8dee9;
+	--nord5: #e5e9f0;
+	--nord6: #eceff4;
+	/* Frost */
+	--nord7: #8fbcbb;
+	--nord8: #88c0d0;
+	--nord9: #81a1c1;
+	--nord10: #5e81ac;
+	/* Aurora */
+	--nord11: #bf616a;
+	--nord12: #d08770;
+	--nord13: #ebcb8b;
+	--nord14: #a3be8c;
+	--nord15: #b48ead;
+	 
+	--nord3-4: #7d8a9e; /* A lighter dark colour, used for like disabled text and code comments. Not part of the nord palette */
+	
+	--element-radius: 4px;
+	
+	/* Onto the actual styling of Trilium */
+	
+	--theme-style: dark;
+	
+	--main-font-family: 'Lato';
+	--main-font-size: normal;
+	
+	--tree-font-family: 'Lato';
+	--tree-font-size: normal;
+	
+	--detail-font-family: 'Lato';
+	--detail-font-size: normal;
+	
+	--monospace-font-family: 'Inconsolata';
+	--monospace-font-size: normal;
 
-    --main-background-color: var(--nord0);
-    --main-text-color: var(--nord4);
-    --main-border-color: var(--nord1);
-    
-    --accented-background-color: var(--nord1);
-    --more-accented-background-color: var(--nord2);
-    
-    --button-background-color: var(--nord1);
-    --button-disabled-background-color: var(--nord1);
-    --button-border-color: var(--nord1);
-    --button-text-color: var(--nord4);
-    --button-border-radius: var(--element-radius);
-    
-    --primary-button-background-color: var(--nord2);
-    --primary-button-text-color: var(--nord5);
-    --primary-button-border-color: var(--nord2);
-    
-    --muted-text-color: #abb9cf;
-    
-    --input-text-color: var(--nord4);
-    --input-background-color: var(--nord1);
-    
-    --hover-item-text-color: var(--nord5);
-    --hover-item-background-color: var(--nord2);
-        
-    --active-item-text-color: var(--nord5);
-    --active-item-background-color: var(--nord2);
-    
-    --menu-text-color: var(--nord4);
-    --menu-background-color: var(--nord1);
-    
-    --modal-background-color: var(--nord0);
-    --modal-backdrop-color: var(--nord0);
-    
-    --left-pane-background-color: var(--nord0);
-    --left-pane-text-color: var(--nord4);
+	--main-background-color: var(--nord0);
+	--main-text-color: var(--nord4);
+	--main-border-color: var(--nord1);
+	
+	--accented-background-color: var(--nord1);
+	--more-accented-background-color: var(--nord2);
+	
+	--button-background-color: var(--nord1);
+	--button-disabled-background-color: var(--nord1);
+	--button-border-color: var(--nord1);
+	--button-text-color: var(--nord4);
+	--button-border-radius: var(--element-radius);
+	
+	--primary-button-background-color: var(--nord2);
+	--primary-button-text-color: var(--nord5);
+	--primary-button-border-color: var(--nord2);
+	
+	--muted-text-color: var(--nord-3-4);
+	
+	--input-text-color: var(--nord4);
+	--input-background-color: var(--nord1);
+	
+	--hover-item-text-color: var(--nord5);
+	--hover-item-background-color: var(--nord2);
+		
+	--active-item-text-color: var(--nord5);
+	--active-item-background-color: var(--nord2);
+	
+	--menu-text-color: var(--nord4);
+	--menu-background-color: var(--nord1);
+	
+	--modal-background-color: var(--nord0);
+	--modal-backdrop-color: var(--nord0);
+	
+	--left-pane-background-color: var(--nord0);
+	--left-pane-text-color: var(--nord4);
 
-    --launcher-pane-background-color: var(--nord0);
-    --launcher-pane-text-color: var(--nord4);
+	--launcher-pane-background-color: var(--nord0);
+	--launcher-pane-text-color: var(--nord4);
 
-    --active-tab-background-color: var(--nord1);
-    --active-tab-text-color: var(--nord4);
+	--active-tab-background-color: var(--nord1);
+	--active-tab-text-color: var(--nord4);
 
-    --inactive-tab-background-color: var(--nord0);
-    --inactive-tab-text-color: var(--nord4);
-    
-    --scrollbar-border-color: var(--nord1);
-    --tooltip-background-color: var(--nord1);
-    --link-color: var(--nord8);
-    
-    --mermaid-theme: forest;
+	--inactive-tab-background-color: var(--nord0);
+	--inactive-tab-text-color: var(--nord4);
+	
+	--scrollbar-border-color: var(--nord1);
+	--tooltip-background-color: var(--nord1);
+	--link-color: var(--nord8);
+	
+	--mermaid-theme: forest;
 }
 
 /* Style CodeMirror, mainly syntax highlighting */
@@ -110,7 +112,7 @@
 .cm-s-default .cm-operator {color: var(--nord9) !important; }
 .cm-s-default .cm-variable-2 {color: var(--nord9) !important; }
 .cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: var(--nord7) !important; }
-.cm-s-default .cm-comment {color: var(--nord3) !important; }
+.cm-s-default .cm-comment {color: var(--nord3-4) !important; }
 .cm-s-default .cm-tag {color: var(--nord9) !important; }
 .cm-s-default .cm-keyword {color: var(--nord9) !important; }
 .cm-s-default .cm-number {color: var(--nord15) !important; }
@@ -120,87 +122,180 @@
 .cm-s-default .cm-attribute {color: var(--nord8) !important; }
 .cm-s-default .cm-error {color: var(--nord11) !important; }
 .cm-s-default .cm-meta {color: var(--nord9) !important; }
-.cm-s-default .cm-matchhighlight {background: var(--nord1) !important; }
-.CodeMirror-line {color: var(--nord4) !important; }
-.CodeMirror-linenumber {color: var(--nord3) !important; }
-.CodeMirror-cursor {border-color: var(--nord4) !important; }
-.CodeMirror-activeline-background {background: var(--nord1) !important; }
-.CodeMirror-matchingbracket {color: var(--nord4) !important; outline: 1px solid var(--nord8) !important; }
-.CodeMirror-nonmatchingbracket {color: var(--nord11) !important }
-.CodeMirror-matchingtag {background: var(--nord1) !important; }
-.CodeMirror-selected {background: var(--nord1) !important; }
+.cm-s-default .cm-def {color: var(--nord8) !important; }
+.cm-s-default .cm-matchhighlight {background-color: rgba(0, 0, 0, 0) !important; border-bottom: 1px solid var(--nord8) }
+.cm-s-default .CodeMirror-line {color: var(--nord4) !important; }
+.cm-s-default .CodeMirror-linenumber {color: var(--nord3-4) !important; }
+.cm-s-default .CodeMirror-cursor {border-color: var(--nord4) !important; }
+.cm-s-default .CodeMirror-activeline-background {background: var(--nord1) !important; }
+.cm-s-default .CodeMirror-matchingbracket {color: var(--nord4) !important; outline: 1px solid var(--nord8) !important; }
+.cm-s-default .CodeMirror-nonmatchingbracket {color: var(--nord11) !important }
+.cm-s-default .CodeMirror-selected {background: var(--nord2) !important; }
+.cm-s-default .CodeMirror-matchingtag {background-color: var(--nord1) !important; }
 
-/* Tweaks - These are all very fragile and will break if trilium updates it's UI too much */
+/* Coloured headings like in Obsidian */
+
+.note-detail-editable-text-editor h2, /* For some reason you can't create a heading 1/h1 in trilium - So start at h2 */
+.note-detail-readonly-text h2 {
+	color: var(--nord11);
+}
+
+.note-detail-editable-text-editor h3,
+.note-detail-readonly-text h3 {
+	color: var(--nord12);
+}
+
+.note-detail-editable-text-editor h4,
+.note-detail-readonly-text h4 {
+	color: var(--nord13);
+}
+
+.note-detail-editable-text-editor h5,
+.note-detail-readonly-text h5 {
+	color: var(--nord14);
+}
+
+.note-detail-editable-text-editor h6,
+.note-detail-readonly-text h6 {
+	color: var(--nord15);
+}
+
+/* Tweaks - These are all very fragile and will break if trilium updates its UI too much */
+
+body input,
+body select,
+body button,
+body .button-widget,
+body .input-group-text {
+	border: none !important;
+	border-radius: var(--element-radius) !important;
+	background-color: var(--nord1) !important;
+	text-decoration: none !important;
+	transition: all 0.2s ease-in-out;
+}
+
+body button:hover,
+body input[type="button"]:hover,
+body .button-widget:hover,
+body .input-group-text:hover {
+	background-color: var(--nord2) !important;
+}
+
+body .input-group * {
+	border-radius: 0 !important;
+}
+
+body .input-group > :first-child {
+	border-radius: var(--element-radius) 0 0 var(--element-radius) !important;
+}
+
+body .input-group .input-group-append :last-child {
+	border-radius: 0 var(--element-radius) var(--element-radius) 0 !important;
+}
 
 body .global-menu-button {
-    background-image: url("../../../images/icon-grey.png");
+	background-image: url("../../../images/icon-grey.png");
 }
 
 #launcher-pane > * {
-    left: 0px;
-    position: relative;
+	left: 0px;
+	position: relative;
 }
 
 #launcher-pane .icon-action {
-    border-radius: 0px;
+	border-radius: 0px !important;
 }
 
-body .search-button {
-    background: rgba(0, 0, 0, 0) !important;
+body .quick-search .search-button {
+	background: rgba(0, 0, 0, 0) !important;
 }
 
 body .search-string {
-    background: rgba(0, 0, 0, 0) !important;
-    border-radius: 0px !important;
+	background: rgba(0, 0, 0, 0) !important;
+	border-radius: 0px !important;
 }
 
 body .fancytree-node * {
-    border-radius: var(--element-radius) !important;
+	border-radius: var(--element-radius) !important;
 }
 
 body .fancytree-node:hover {
-    background: var(--button-background-color);
-    border-color: var(--main-background-color) !important;
+	background: var(--button-background-color);
+	border-color: var(--main-background-color) !important;
 }
 
 body .tree-item-button:hover {
-    background: var(--nord3) !important;
-    border: none;
+	background: var(--nord3) !important;
+	border: none;
+}
+
+body .note-title {
+	background: none !important;
 }
 
 body .note-title:focus-visible {
-    outline: none;
-    background: var(--button-background-color) !important;
-    border-radius: var(--element-radius);
+	outline: none;
+	background: var(--button-background-color) !important;
+	border-radius: var(--element-radius);
 }
 
 body .tab-row-widget-container {
-    border-radius: var(--element-radius) !important;
+	border-radius: var(--element-radius) !important;
 }
 
 body .tab-row-widget-container * {
-    border-radius: inherit !important;
+	border-radius: inherit !important;
 }
 
 body .note-tab-wrapper {
-    margin-right: 6px;
+	margin-right: 6px;
 }
 
 body .note-tab-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 body .note-tab-close span {
-    height: 100%;
-    transform: translateY(-2px);
+	height: 100%;
+	transform: translateY(-2px);
 }
 
 body .note-new-tab {
-    line-height: 2rem;
+	line-height: 2rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-border-color) !important;
+	background-color: var(--scrollbar-border-color) !important;
+}
+
+.note-detail-editable-text-editor li,
+.note-detail-readonly-text li {
+	line-height: 2.2rem;
+}
+
+body .modal-header {
+	border-bottom: none;
+}
+
+body .modal-header .modal-title {
+	font-size: 150%;
+}
+
+body .nav-tabs {
+	border: none !important;
+}
+
+body .nav-tabs .nav-link {
+	border-radius: var(--element-radius) !important;
+	border: none;
+}
+
+body .nav-tabs .nav-link.active {
+	background-color: var(--nord2) !important;
+}
+
+body .nav-tabs .nav-link:hover {
+	background-color: var(--nord1);
 }
