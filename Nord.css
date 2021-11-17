@@ -45,7 +45,7 @@
 	--detail-font-family: 'Lato';
 	--detail-font-size: normal;
 	
-	--monospace-font-family: 'Inconsolata';
+	--monospace-font-family: 'Fira Code';
 	--monospace-font-size: normal;
 
 	--main-background-color: var(--nord0);
@@ -164,7 +164,7 @@
 
 body input,
 body select,
-body button,
+body button:not(.ck-color-grid__tile),
 body .button-widget,
 body .input-group-text {
 	border: none !important;
@@ -174,7 +174,7 @@ body .input-group-text {
 	transition: all 0.2s ease-in-out;
 }
 
-body button:hover,
+body button:not(.ck-color-grid__tile):hover,
 body input[type="button"]:hover,
 body .button-widget:hover,
 body .input-group-text:hover {
@@ -273,6 +273,10 @@ body .note-new-tab {
 .note-detail-editable-text-editor li,
 .note-detail-readonly-text li {
 	line-height: 2.2rem;
+}
+
+body .note-detail {
+	margin-bottom: 55%;
 }
 
 body .modal-header {
